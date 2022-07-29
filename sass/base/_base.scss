@@ -1,0 +1,20 @@
+// this is a partial sass file that will be imported into the main file
+
+/* basic reset */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+/* rem depend on the root font-size */
+/* em depend on the font-size of the parent element */
+html {
+  // this defines what 1rem is:
+  /* 10px/16px = 0.625 */
+  font-size: 62.5%;
+}
+body {
+  box-sizing: border-box;
+}
