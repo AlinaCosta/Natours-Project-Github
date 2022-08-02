@@ -4,7 +4,7 @@
 
   //pseudo-class :not()
   //- select everything except the last child
-  &: not(: last-child) {
+  &:not(:last-child) {
     margin-bottom: $gutter-vertical;
   }
 
