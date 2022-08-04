@@ -1,5 +1,6 @@
 .row {
-  max-width: $grid-width;
+  // max-width initial, but is not working
+  width: $grid-width;
   margin: 0 auto;
 
   //pseudo-class :not()
