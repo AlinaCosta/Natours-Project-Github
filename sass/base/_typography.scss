@@ -4,7 +4,6 @@ body {
   /* font-size: 16px; */
   line-height: 1.7;
   color: $color-grey-dark;
-  padding: 3rem;
 }
 
 .heading-primary {
@@ -28,6 +27,11 @@ body {
     /* animation-iteration-count: 3; */
     /* animation-delay: 0.5s; */
     /* end */
+
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-size: 5rem;
+    }
   }
   &--sub {
     display: block;
@@ -38,6 +42,10 @@ body {
     /* moveInRight from the @keyframes */
     animation: moveInRight 1s ease-out;
     /* end */
+
+    @include respond(phone) {
+      letter-spacing: 0.5rem;
+    }
   }
 }
 
@@ -58,6 +66,14 @@ body {
   // end
   transition: all 0.2s;
   // for the efect
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
+
   &:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);

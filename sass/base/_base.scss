@@ -14,7 +14,27 @@ html {
   // this defines what 1rem is:
   /* 10px/16px = 0.625 */
   font-size: 62.5%;
+  overflow-x: hidden;
+  //the order for the desktop-first website
+  //from the larger width and move down to the lower width
+  //
+  //for the mobile-first website is the complete other way around
+  @include respond(tab-land) {
+    font-size: 56.25%; // 1rem = 9px, 9/16 = 56.25%
+  }
+  @include respond(tab-port) {
+    font-size: 50%; // 1rem = 8px, 8/16 = 50%
+  }
+  @include respond(big-desktop) {
+    font-size: 75%; // 1rem = 12px
+  }
 }
 body {
   box-sizing: border-box;
+  padding: 3rem;
+  overflow-x: hidden;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
 }
