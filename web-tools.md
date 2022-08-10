@@ -9,3 +9,7 @@ https://linea.io/
 # video
 
 https://coverr.co/
+
+# responsive design
+
+https://sizzy.co/
