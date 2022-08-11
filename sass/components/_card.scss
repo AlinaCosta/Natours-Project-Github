@@ -186,7 +186,9 @@
   //
   //
 
-  @include respond(tab-port) {
+  // the media query is applied when the screen is smaller than 56em and if we have a touch device:
+
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     height: auto;
     border-radius: 3px;
     background-color: $color-white;
