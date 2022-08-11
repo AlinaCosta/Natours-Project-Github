@@ -15,6 +15,7 @@
     left: 0;
 
     // to not be able to see back part
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 
     border-radius: 3px;
